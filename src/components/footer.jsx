@@ -34,9 +34,10 @@ const Footer = () => {
           &nbsp;接口&nbsp;|&nbsp;检测频率 5 分钟
         </p>
         <p>
-          Copyright&nbsp;&copy;&nbsp;2020&nbsp;-&nbsp;{new Date().getFullYear()}
+          Copyright&nbsp;&copy;&nbsp;{new Date().getFullYear()}
+          {new Date().getFullYear() === 2024 ? null : ` - ${new Date().getFullYear()}`}
           &nbsp;
-          <CustomLink to="https://www.imsyy.top/" text="無名" />
+          <CustomLink to="https://blog.lao-shui.top/" text="LaoShui" />
           {siteIcp ? (
             <React.Fragment>
               &nbsp;|&nbsp;
